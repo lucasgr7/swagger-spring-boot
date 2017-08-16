@@ -11,4 +11,9 @@ public class HelloController {
 	public String sayHello() {
 		return "Swagger Hello World";
 	}
+	
+	@RequestMapping(method = RequestMethod.GET, value = "/api/bye")
+	public String sayBye() {
+		return "Bye world!";
+	}
 }
